@@ -50,8 +50,8 @@
       <h1 class="text-center fw-bold text-white mt-5 mb-5 pb-3 start-playing">
         CHALLENGE YOURSELF IN THE GAME
       </h1>
-      <!-- START OF COMPONENT -->
-      <div class="container-component" id="container">
+      <!-- START OF COMPONENT NO. 1 -->
+      <div class="container-component" id="container1">
         <div class="form-container sign-up-container">
           <form class="component-form">
             <h2 class="pb-3">HINT:</h2>
@@ -112,20 +112,364 @@
               <button
                 class="ghost ghost-goback component-btn"
                 id="signIn"
-                onClick="goBack()"
+                onClick="goBack1()"
               >
                 Go Back
               </button>
             </div>
             <div class="overlay-panel overlay-right">
               <br />
-              <h1 class="fw-bold pb-2" style="font-size: 60px">Decrypt Me!</h1>
+              <h1 class="pb-2" style="font-size: 30px">CLUE:</h1>
               <p class="fw-bold text-shadow fs-3">GYHVN GSNO GOL</p>
               <button
                 class="ghost component-btn"
                 id="btn-hint"
-                onClick="goToHint()"
+                onClick="goToHint1()"
               >
+                Hint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF COMPONENT -->
+
+      <br /><br /><br />
+
+      <!-- START OF COMPONENT NO. 2 -->
+      <div class="container-component" id="container2">
+        <div class="form-container sign-up-container">
+          <form class="component-form">
+            <h2 class="pb-3">HINT:</h2>
+            <p class="fs-5 fw-bold">
+              Which cyber threat, abbreviated as DDoS, aims to disrupt the
+              normal functioning of a network or server by flooding it with an
+              immense volume of traffic, causing a denial of service to
+              legitimate users?
+            </p>
+          </form>
+        </div>
+
+        <!-- Divider -->
+
+        <div class="form-container sign-in-container">
+          <form class="component-form" onsubmit="checkAnswer2(event)">
+            <h2 class="pb-3">Question #2</h2>
+
+            <input
+              id="answerInput2"
+              type="text"
+              class="border border-1 border-dark uppercase-input"
+              placeholder="Answer"
+              maxlength="30"
+            />
+
+            <div
+              class="alert alert-danger rounded-5 text-center py-2"
+              id="errorAlert2"
+            >
+              <small><strong>Failed:</strong> The answer is not correct.</small>
+            </div>
+
+            <div
+              class="alert alert-success rounded-5 text-center py-2"
+              id="successAlert2"
+            >
+              <small><strong>Awesome:</strong> The answer is correct.</small>
+            </div>
+
+            <div class="buttons d-flex mt-2">
+              <button class="submit-btn me-3 component-btn">Submit</button>
+              <br />
+              <button class="btn-dark component-btn" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div
+            class="overlay"
+            style="
+              opacity: 0.95;
+              background: url(https://mintivo.co.uk/wp-content/uploads/2022/10/ddoss-attack.png);
+              background-size: cover;
+            "
+          >
+            <div class="overlay-panel overlay-left">
+              <br />
+
+              <button
+                class="ghost ghost-goback component-btn"
+                id="signIn"
+                onClick="goBack2()"
+              >
+                Go Back
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <br />
+              <h1 class="pb-2" style="font-size: 30px">CLUE:</h1>
+              <p class="fw-bold text-shadow fs-3">
+                NSCDBSLEDON NOXSKV YP COBFSMO
+              </p>
+              <button class="ghost component-btn" onClick="goToHint2()">
+                Hint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF COMPONENT -->
+
+      <br /><br /><br />
+
+      <!-- START OF COMPONENT NO. 3 -->
+      <div class="container-component" id="container3">
+        <div class="form-container sign-up-container">
+          <form class="component-form">
+            <h2 class="pb-3">HINT:</h2>
+            <p class="fs-5 fw-bold">
+              What technology, denoted by the acronym HTTPS, establishes a
+              secure communication channel, encrypting data and ensuring secure
+              transmission between a web server and a browser?
+            </p>
+          </form>
+        </div>
+
+        <!-- Divider -->
+
+        <div class="form-container sign-in-container">
+          <form class="component-form" onsubmit="checkAnswer3(event)">
+            <h2 class="pb-3">Question #3</h2>
+
+            <input
+              id="answerInput3"
+              type="text"
+              class="border border-1 border-dark uppercase-input"
+              placeholder="Answer"
+              maxlength="50"
+            />
+
+            <div
+              class="alert alert-danger rounded-5 text-center py-2"
+              id="errorAlert3"
+            >
+              <small><strong>Failed:</strong> The answer is not correct.</small>
+            </div>
+
+            <div
+              class="alert alert-success rounded-5 text-center py-2"
+              id="successAlert3"
+            >
+              <small><strong>Awesome:</strong> The answer is correct.</small>
+            </div>
+
+            <div class="buttons d-flex mt-2">
+              <button class="submit-btn me-3 component-btn">Submit</button>
+              <br />
+              <button class="btn-dark component-btn" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div
+            class="overlay"
+            style="
+              opacity: 0.95;
+              background: url(https://cdn.wallpapersafari.com/76/52/S70pxH.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="overlay-panel overlay-left">
+              <br />
+
+              <button
+                class="ghost ghost-goback component-btn"
+                id="signIn"
+                onClick="goBack3()"
+              >
+                Go Back
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <br />
+              <h1 class="pb-2" style="font-size: 30px">CLUE:</h1>
+              <p class="fw-bold text-shadow fs-3">
+                RIZOBDOHD DBKXCPOB ZBYDYMYV COMEBO
+              </p>
+              <button class="ghost component-btn" onClick="goToHint3()">
+                Hint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF COMPONENT -->
+
+      <br /><br /><br />
+
+      <!-- START OF COMPONENT NO. 4 -->
+      <div class="container-component" id="container4">
+        <div class="form-container sign-up-container">
+          <form class="component-form">
+            <h2 class="pb-3">HINT:</h2>
+            <p class="fs-5 fw-bold">
+              What internet system translates domain names, like
+              www.example.com, into IP addresses, enabling users to access
+              websites by typing in easily memorable names rather than numerical
+              IP addresses?
+            </p>
+          </form>
+        </div>
+
+        <!-- Divider -->
+
+        <div class="form-container sign-in-container">
+          <form class="component-form" onsubmit="checkAnswer4(event)">
+            <h2 class="pb-3">Question #4</h2>
+
+            <input
+              id="answerInput4"
+              type="text"
+              class="border border-1 border-dark uppercase-input"
+              placeholder="Answer"
+              maxlength="30"
+            />
+
+            <div
+              class="alert alert-danger rounded-5 text-center py-2"
+              id="errorAlert4"
+            >
+              <small><strong>Failed:</strong> The answer is not correct.</small>
+            </div>
+
+            <div
+              class="alert alert-success rounded-5 text-center py-2"
+              id="successAlert4"
+            >
+              <small><strong>Awesome:</strong> The answer is correct.</small>
+            </div>
+
+            <div class="buttons d-flex mt-2">
+              <button class="submit-btn me-3 component-btn">Submit</button>
+              <br />
+              <button class="btn-dark component-btn" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div
+            class="overlay"
+            style="
+              opacity: 0.95;
+              background: url(https://wallpapercave.com/wp/wp10743603.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="overlay-panel overlay-left">
+              <br />
+
+              <button
+                class="ghost ghost-goback component-btn"
+                id="signIn"
+                onClick="goBack4()"
+              >
+                Go Back
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <br />
+              <h1 class="pb-2" style="font-size: 30px">CLUE:</h1>
+              <p class="fw-bold text-shadow fs-3">NYWKSX XKWO CICDOW</p>
+              <button class="ghost component-btn" onClick="goToHint4()">
+                Hint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF COMPONENT -->
+
+      <br /><br /><br />
+
+      <!-- START OF COMPONENT NO. 5 -->
+      <div class="container-component" id="container5">
+        <div class="form-container sign-up-container">
+          <form class="component-form">
+            <h2 class="pb-3">HINT:</h2>
+            <p class="fs-5 fw-bold">
+              In computer science, what does the acronym API stand for, which
+              serves as an intermediary software allowing different applications
+              to communicate and share data or functionalities?
+            </p>
+          </form>
+        </div>
+
+        <!-- Divider -->
+
+        <div class="form-container sign-in-container">
+          <form class="component-form" onsubmit="checkAnswer5(event)">
+            <h2 class="pb-3">Question #5</h2>
+
+            <input
+              id="answerInput5"
+              type="text"
+              class="border border-1 border-dark uppercase-input"
+              placeholder="Answer"
+              maxlength="50"
+            />
+
+            <div
+              class="alert alert-danger rounded-5 text-center py-2"
+              id="errorAlert5"
+            >
+              <small><strong>Failed:</strong> The answer is not correct.</small>
+            </div>
+
+            <div
+              class="alert alert-success rounded-5 text-center py-2"
+              id="successAlert5"
+            >
+              <small><strong>Awesome:</strong> The answer is correct.</small>
+            </div>
+
+            <div class="buttons d-flex mt-2">
+              <button class="submit-btn me-3 component-btn">Submit</button>
+              <br />
+              <button class="btn-dark component-btn" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div
+            class="overlay"
+            style="
+              opacity: 0.95;
+              background: url(https://nordware.io/blog/wp-content/uploads/2021/10/unnamed-1_Easy-Resize.com_.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="overlay-panel overlay-left">
+              <br />
+
+              <button
+                class="ghost ghost-goback component-btn"
+                id="signIn"
+                onClick="goBack5()"
+              >
+                Go Back
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <br />
+              <h1 class="pb-2" style="font-size: 30px">CLUE:</h1>
+              <p class="fw-bold text-shadow fs-3">
+                KZZVSMKDSYX ZBYQBKWWSXQ SXDOBPKMO
+              </p>
+              <button class="ghost component-btn" onClick="goToHint5()">
                 Hint
               </button>
             </div>
@@ -180,6 +524,82 @@
         } else {
           errorAlert1.style.display = "block"; // Show error message
           successAlert1.style.display = "none"; // Hide success message
+        }
+      }
+
+      function checkAnswer2(event) {
+        event.preventDefault(); // Prevents the form from submitting
+
+        let errorAlert2 = document.getElementById("errorAlert2");
+        let successAlert2 = document.getElementById("successAlert2");
+
+        // Get the value entered in the input field
+        let answer2 = document.getElementById("answerInput2").value.trim();
+
+        // Check if the entered answer is 'WORLD WIDE WEB'
+        if (answer2.toUpperCase() === "DISTRIBUTED DENIAL OF SERVICE") {
+          successAlert2.style.display = "block"; // Show success message
+          errorAlert2.style.display = "none"; // Hide error message
+        } else {
+          errorAlert2.style.display = "block"; // Show error message
+          successAlert2.style.display = "none"; // Hide success message
+        }
+      }
+
+      function checkAnswer3(event) {
+        event.preventDefault(); // Prevents the form from submitting
+
+        let errorAlert3 = document.getElementById("errorAlert3");
+        let successAlert3 = document.getElementById("successAlert3");
+
+        // Get the value entered in the input field
+        let answer3 = document.getElementById("answerInput3").value.trim();
+
+        // Check if the entered answer is 'WORLD WIDE WEB'
+        if (answer3.toUpperCase() === "HYPERTEXT TRANSFER PROTOCOL SECURE") {
+          successAlert3.style.display = "block"; // Show success message
+          errorAlert3.style.display = "none"; // Hide error message
+        } else {
+          errorAlert3.style.display = "block"; // Show error message
+          successAlert3.style.display = "none"; // Hide success message
+        }
+      }
+
+      function checkAnswer4(event) {
+        event.preventDefault(); // Prevents the form from submitting
+
+        let errorAlert4 = document.getElementById("errorAlert4");
+        let successAlert4 = document.getElementById("successAlert4");
+
+        // Get the value entered in the input field
+        let answer4 = document.getElementById("answerInput4").value.trim();
+
+        // Check if the entered answer is 'WORLD WIDE WEB'
+        if (answer4.toUpperCase() === "DOMAIN NAME SYSTEM") {
+          successAlert4.style.display = "block"; // Show success message
+          errorAlert4.style.display = "none"; // Hide error message
+        } else {
+          errorAlert4.style.display = "block"; // Show error message
+          successAlert4.style.display = "none"; // Hide success message
+        }
+      }
+
+      function checkAnswer5(event) {
+        event.preventDefault(); // Prevents the form from submitting
+
+        let errorAlert5 = document.getElementById("errorAlert5");
+        let successAlert5 = document.getElementById("successAlert5");
+
+        // Get the value entered in the input field
+        let answer5 = document.getElementById("answerInput5").value.trim();
+
+        // Check if the entered answer is 'WORLD WIDE WEB'
+        if (answer5.toUpperCase() === "APPLICATION PROGRAMMING INTERFACE") {
+          successAlert5.style.display = "block"; // Show success message
+          errorAlert5.style.display = "none"; // Hide error message
+        } else {
+          errorAlert5.style.display = "block"; // Show error message
+          successAlert5.style.display = "none"; // Hide success message
         }
       }
     </script>
