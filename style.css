@@ -64,7 +64,7 @@ header ul li a.active {
     color: #2b1055;
 }
 
-section {
+section.section1-images {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -75,7 +75,7 @@ section {
     overflow: hidden;
 }
 
-section::before {
+section.section1-images::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -87,7 +87,7 @@ section::before {
 
 }
 
-section img {
+section.section1-images img {
     position: absolute;
     top: 0;
     left: 0;
@@ -97,12 +97,12 @@ section img {
     pointer-events: none;
 }
 
-section img#moon {
+section.section1-images img#moon {
     mix-blend-mode: screen;
 
 }
 
-section img#mountains_front {
+section.section1-images img#mountains_front {
     z-index: 10;
 }
 
@@ -133,7 +133,6 @@ section img#mountains_front {
     position: relative;
     padding: 100px;
     background: #1c0522;
-
 }
 
 .sec h2 {
@@ -159,4 +158,38 @@ section img#mountains_front {
     font-size: 2.5em;
     color: #fff;
 
+}
+
+.question-components {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px 100px 100px;
+    background: #1c0522;
+}
+
+.start-playing {
+    font-size: 60px;
+}
+
+.uppercase-input {
+    text-transform: uppercase;
+}
+
+#errorAlert1,
+#errorAlert2,
+#errorAlert3,
+#errorAlert4,
+#errorAlert5 {
+    display: none;
+}
+
+#successAlert1,
+#successAlert2,
+#successAlert3,
+#successAlert4,
+#successAlert5 {
+    display: none;
 }
