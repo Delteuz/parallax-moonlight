@@ -2,10 +2,10 @@
       "repositories": [
           {
               "type": "vcs",
-              "url": "https://github.com/Delteuz/items"
+              "url": "https://github.com/Delteuz/parallax-moonlight"
           }
       ],
       "require": {
-          "Delteuz/items": "dev-master"
+          "Delteuz/parallax-moonlight": "dev-master"
       }
   }
